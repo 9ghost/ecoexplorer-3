@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos de Ecoturismo</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Destinos de Ecoturismo</h1>
+    <a href="/destinations/new" class="btn btn-primary mb-3">Novo Destino</a>
+    <div class="row">
+      <% destinations.forEach(destino => { %>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="<%= destino?.image_url %>" class="card-img-top" alt="Imagem do destino">
+            <div class="card-body">
+              <h5 class="card-title"><%= destino.name %></h5>
+              <p class="card-text"><%= destino.description %></p>
+              <a href="/activities/<%= destino.id %>" class="btn btn-info">Ver Atividades</a>
+              <a href="/destinations/edit/<%= destino.id %>" class="btn btn-warning">Editar</a>
+              <a href="/destinations/delete/<%= destino.id %>" class="btn btn-danger">Excluir</a>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

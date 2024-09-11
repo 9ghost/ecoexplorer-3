@@ -1,0 +1,62 @@
+{
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Bali",
+      "description": "Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.",
+      "image_url": "https://cms-asset.ayana.com/OG_Image_ARSB_66cefac2a6.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Paris",
+      "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture."
+    },
+    {
+      "id": 3,
+      "name": "New York",
+      "description": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean."
+    },
+    {
+      "id": 4,
+      "name": "Tokyo",
+      "description": "Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples."
+    },
+    {
+      "id": 5,
+      "name": "Sydney",
+      "description": "Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its harbourfront Sydney Opera House."
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "name": "Hiking",
+      "description": "Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.",
+      "destination_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Cycling",
+      "description": "Cycling, also called biking or bicycling, is the use of bicycles for transport, recreation, exercise or sport.",
+      "destination_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Swimming",
+      "description": "Swimming is an individual or team racing sport that requires the use of one's entire body to move through water.",
+      "destination_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Running",
+      "description": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.",
+      "destination_id": 4
+    },
+    {
+      "id": 5,
+      "name": "Yoga",
+      "description": "Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India.",
+      "destination_id": 5
+    }
+  ]
+}
